@@ -18,4 +18,4 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/todos/update/{id}',['uses'=>'TodoController@update','as'=>'todo.update']);
 });
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
