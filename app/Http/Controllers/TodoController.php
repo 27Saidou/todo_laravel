@@ -27,7 +27,7 @@ class TodoController extends Controller
     }
     //creation de la methode de mise a jour
     public function edit($id){
-        $todo= Todo::find($id);
+        $todo=Todo::find($id);
         return view('edit')->with('todo',$todo);
     }
     //creation de notre methode update
